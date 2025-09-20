@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #00aaff;
+  text-shadow: 0 0 20px rgba(0, 170, 255, 0.6);
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 2rem;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 170, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 170, 255, 0.35);
+}
+
+.card h2 {
+  margin-bottom: 1.5rem;
+  color: #eee;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn {
+  display: block;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.btn.open {
+  background: #00aaff;
+  color: #000;
+}
+
+.btn.open:hover {
+  background: #0088cc;
+  color: #fff;
+}
+
+.btn.download {
+  background: transparent;
+  color: #00aaff;
+  border: 2px solid #00aaff;
+}
+
+.btn.download:hover {
+  background: #00aaff;
+  color: #000;
+}
